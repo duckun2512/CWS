@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="w3-container">
+        <h2>Hoverable Table</h2>
+        <button class="w3-button w3-khaki">
+            <a href="./form.html">Create new</a>
+        </button>
+        <button id="cart" class="w3-button w3-blue">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cart</h5>
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">Product</span>
+                        <span class="cart-price cart-header cart-column">Price</span>
+                        <span class="cart-quantity cart-header cart-column">Amount</span>
+                    </div>
+                    <div class="cart-items">
+                        <div class="modal-body" >
+                            <div class="cart-items" id="cart-items">
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Total:</strong>
+                        <span class="cart-total-price" id="total-price">0VNĐ</span>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary close-footer">Đồng</button>
+                    <button type="button" id="btn-payment" class="btn btn-primary order">Order</button>
+                </div>
+            </div>
+        </div>
+        <table class="w3-table-all w3-hoverable">
+            <thead>
+                <tr class="w3-light-grey">
+                    <th> </th>
+                    <th>Name</th>
+                    <th>Price </th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="my-table-data">
+            </tbody>
+        </table>
+        <form action=""></form>
+    </div>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
